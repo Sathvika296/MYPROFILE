@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathvika Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header style="background-color: #333;">
+        <div class="container">
+            <h1 style="color: #fff;">Sathvika Nitturu</h1>
+            <nav>
+                <ul>
+                    <li><button class="nav-button" data-target="about">About Me</button></li>
+                    <li><button class="nav-button" data-target="skills">Skills</button></li>
+                    <li><button class="nav-button" data-target="education">Education</button></li>
+                    <li><button class="nav-button" data-target="contact">Contact</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="content-section" style="background-color: #f0f0f0;">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! My name is Sathvika, and I am enthusiastic about exploring the world of programming. I have foundational knowledge in Python and Java, which I am eager to further develop and apply. While I haven't yet undertaken any projects, I am passionate about learning and exploring coding challenges in my own way.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="content-section" style="background-color: #fff;">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill">
+                <h3>Java</h3>
+            </div>
+
+            <div class="skill">
+                <h3>SQL</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="content-section" style="background-color: #f0f0f0;">
+        <div class="container">
+            <h2>Education</h2>
+            <p> Bachelor of technology in the stream of Electrical and Electronics Engineering</p>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section" style="background-color: #fff;">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Mail id: nitturusathvika29@gmail.com
+            </p>
+        </div>
+    </section>
+
+    <footer style="background-color: #333; color: #fff; text-align: center;">
+        <div class="container">
+            <p>&copy; 2024 Sathvika Nitturu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const navButtons = document.querySelectorAll('.nav-button');
+
+        navButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const target = this.getAttribute('data-target');
+                const section = document.getElementById(target);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
